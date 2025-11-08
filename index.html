@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Trade Calendar V2</title>
-    <script type="module">
-      import React from "https://esm.sh/react";
-      import ReactDOM from "https://esm.sh/react-dom/client";
-      import TradeCalendarMain from "./Main.js";
-      ReactDOM.createRoot(document.body).render(
-        React.createElement(TradeCalendarMain)
-      );
-    </script>
-  </head>
-  <body style="margin:0;background:#000"></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P-L Calendar V2</title>
+
+  <!-- React + Framer Motion -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- Your main React app file -->
+  <script type="text/babel" src="./Main.js"></script>
+</body>
 </html>
